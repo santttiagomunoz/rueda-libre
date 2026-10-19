@@ -1,0 +1,10 @@
+URL = http://127.0.0.1:5500/index.html
+
+protocolo = http
+codigo de estado = 304
+
+codigo obtenido al usar ruta invalida = GET http://127.0.0.1:5500/promociones.html 404 (Not Found)
+
+html = hara toda la estructura o esqueleto de la pagina
+css = le dara estilo a cada una de las etiquetas del html
+javascript = le dara funcionalidad por medio del don a las etiquetas html
