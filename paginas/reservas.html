@@ -35,6 +35,45 @@
                 </dd>
             </dl>
         </section>
+        <section>
+            <form action="POST">
+                <fieldset name="info">
+                    <legend>Tus datos</legend>
+                    <label for="email">email</label><br>
+                    <input type="email" id="email" required><br>
+                    <label for="name">nombre</label><br>
+                    <input type="text" id="name"><br>
+                    <label for="phone">telefono</label><br>
+                    <input type="tel" id="phone"><br>
+                    <label for="numberBicicles">numero de bicicletas</label><br>
+                    <input type="number" id="numberBicicles"><br>
+                    <label for="schedule">schedule</label><br>
+                    <input type="radio" id="schedule">manana
+                    <input type="radio" id="schedule">tarde
+                    <label for="obervations">observaciones adicionales</label><br>
+                    <textarea name="obervations" id="observations"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Tu alquiler                        
+                    </legend>
+                    <label for="date">fecha</label><br>
+                        <input type="date" id="date"><br>
+                        <label for="">tipo de bicicleta</label><br>
+                        <select name="opciones" id="opciones">
+                            <option value="mountain">mountain</option>
+                            <option value="route">route</option>
+                            <option value="street">street</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Confirmacion</legend>
+                    <label for="Confirmacion">confirmacion</label>
+                    <input type="checkbox">
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>
         <h1>Rueda libre</h1>
