@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Libre | Aquiler de bicicletas Medellin</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
-<body>
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./paginas/reservas.html">Reservas</a></li>
-        <li><a href="./paginas/tarifas.html">Tarifas</a></li>
-    </ul>    
-    <h1>Rueda Libre | Aquiler de bicicletas Medellin</h1>
-    <p>bienvenido al nuevo negocio emergente supercool</p>
 
-    <a href="./paginas/tarifas.html">Tarifas</a>
-    <section>        
-        <h2>quienes somos</h2>
-        <p>
-            <a href="#encuentranos">ve a encuentranos</a>            
-        </p>
-        <img src="./img/imagen.png" alt="imagen" width="300">
-        <img src="./img/imagen2.png" alt="imagen" width="300" height="169">
-        <img src="./img/imagen3.png" alt="imagen" width="300">
-    </section>
-    <section>
-        <h2>Nuestros servicios</h2>
-        <p>
-            <h4>alquiler de bicicletas</h4>
-            <h4>mantenimiento de bicicletas</h4>
-            <h4><a href="./paginas/tarifas.html">Recorrido guiado</a></h4>            
-            <em>cada bicicleta incluye casco para prevenir dano en el cerebro</em> <br>
-            <em>cuenta con asistencia tecnica alrederor de 5 kilometros</em>
-        </p>
-    </section>
-    <section>
-        <h2>Como alquilar</h2>
-        
-        <p>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./paginas/reservas.html">Reservas</a></li>
+                <li><a href="./paginas/tarifas.html">Tarifas</a></li>
+            </ul>
+        </nav>
+        <h1>Rueda Libre | Aquiler de bicicletas Medellin</h1>
+    </header>
+
+    <main>
+
+        <p>bienvenido al nuevo negocio emergente supercool</p>
+
+        <form action="">
+            <label for="email">email</label>
+            <input type="email" id="email" required>
+            <label for="date">fecha</label>
+            <input type="date" id="date">
+            <label for="">tipo de bicicleta</label>
+            <select name="" id="">
+                <option value="">mountain</option>
+                <option value="">route</option>
+                <option value="">street</option>
+            </select>
+        </form>
+        <section>
+            <h2>quienes somos</h2>
+            <p>
+                <a href="#encuentranos">ve a encuentranos</a>
+            </p>
+            <img src="./img/imagen.png" alt="imagen" width="300">
+            <img src="./img/imagen2.png" alt="imagen" width="300" height="169">
+            <img src="./img/imagen3.png" alt="imagen" width="300">
+        </section>
+        <section>
+            <h2>Nuestros servicios</h2>
+
+            <article>
+                <h4>alquiler de bicicletas</h4>
+            </article>
+            <article>
+                <h4>mantenimiento de bicicletas</h4>
+            </article>
+
+            <h4><a href="./paginas/tarifas.html">Recorrido guiado</a></h4>
+            <aside>
+                <em>cada bicicleta incluye casco para prevenir dano en el cerebro</em> <br>
+                <em>cuenta con asistencia tecnica alrederor de 5 kilometros</em>
+            </aside>
+
+
+        </section>
+        <section>
+            <h2>Como alquilar</h2>
+
+            <p>
             <ol>
                 <li>selececionar la bicicleta</li>
                 <li>seleccionar la fecha de entrega</li>
@@ -48,19 +76,21 @@
             <ul>
                 <li>10% off por ser primera vez en alquilar</li>
             </ul>
-        </p>
-        <a href="./paginas/reservas.html">Reservar ahora</a>
-    </section>
-    <section id="encuentranos">
-        <h2>encuentranos</h2>
-        <p>
-            <a href="mailto:hola@ruedalibre.example" target="_blank">escribenos</a>
-        </p>
-    </section>
+            </p>
+            <a href="./paginas/reservas.html">Reservar ahora</a>
+        </section>
+        <section id="encuentranos">
+            <h2>encuentranos</h2>
+            <p>
+                <a href="mailto:hola@ruedalibre.example" target="_blank">escribenos</a>
+            </p>
+        </section>
+    </main>
     <footer>
         <h1>Rueda libre</h1>
         <a href="mailto:ruedalibre@gmail.com">ruedalibre@gmail.com</a>
         <p>2026</p>
     </footer>
 </body>
+
 </html>

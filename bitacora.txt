@@ -8,3 +8,38 @@ codigo obtenido al usar ruta invalida = GET http://127.0.0.1:5500/promociones.ht
 html = hara toda la estructura o esqueleto de la pagina
 css = le dara estilo a cada una de las etiquetas del html
 javascript = le dara funcionalidad por medio del don a las etiquetas html
+
+
+rutas relativas 
+
+./index.html
+../index.html
+
+./paginas/tarifas.html
+./paginas/reservas.html
+
+
+dibujo(descripcion de la pagina)
+
+encabezado
+barra nav
+contenido principal
+secciones 
+contenido de secciones 
+articulo 
+pie de pagina
+
+
+form
+<form action="">
+            <label for="email">email</label>
+            <input type="email" id="email" required>
+            <label for="date">fecha</label>
+            <input type="date" id="date">
+            <label for="">tipo de bicicleta</label>
+            <select name="" id="">
+                <option value="">mountain</option>
+                <option value="">route</option>
+                <option value="">street</option>
+            </select>
+        </form>
