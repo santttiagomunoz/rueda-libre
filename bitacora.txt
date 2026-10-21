@@ -34,7 +34,7 @@ nombre       sa            use at least 3 chars                  use at least 3 
 documento  4512346678     must be less than 10 or equal           must be less than 10 or equal
 email     sagmail.com      must be a valid email                  must be a valid email
 celular    4112            must start with 3                     form sent
-fecha     2026-10-02        calendar show option not selectable
+fecha     2026-10-02       calendar show option not selectable
 tipo bici   mountain      seletor shows option mountain          selector shows option mountain
 num bicis    7             input doesnot allow pic 7              input doesnot allow pic 7   
 plan       pro              activates radio button                  radio button activated 
@@ -46,6 +46,24 @@ registro de auditoria
 navegable solo con el teclado
 2- se agrego el atributo tabindex a los titulos y secciones que lo requerian
 
+
+--------------------------------------------------------------------------------------
 mapa de uso de color 
+--------------------------------------------------------------------------------------
+color                    |  contraste                             | aprobado (AA/AAA)
+
+blanco/verdeRuta         | 5.04:1                                 | aprobado AA
+blanco/naranjaPedal      | 2.18:1                                 | No aprobado 
+azulNoche/naranjaPedal   | 7.00:1                                 | aprobado AAA
+azulNoche/crema          | 14.34:1                                 | aprobado AAA
+grisAsfalto/crema        | 5.44:1                                 | aprobado AA
+verdeRuta/crema          | 4.74:1                                 | aprobado AA
+naranjaPedal/crema       | 2.05:1                                 | No aprobado
+blanco/azulNoche         | 15.24:1                                 | aprobado AAA
+
+
 
 sin registros
+
+URL del sitio publicado en github pages
+https://santttiagomunoz.github.io/rueda-libre/

@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --redColor: red;
+    --blueColor: blue;
+    --yellowColor: yellow;
+    --purpleColor: purple;
+    --whiteColor: white;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --space: 3 * rem;
+}
+
+body{
+    font-family: var(--font-montserrat), var(--font-open-sans);
+    
+}
