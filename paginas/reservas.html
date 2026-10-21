@@ -39,37 +39,45 @@
             <form action="POST">
                 <fieldset name="info">
                     <legend>Tus datos</legend>
-                    <label for="email">email</label><br>
-                    <input type="email" id="email" required><br>
                     <label for="name">nombre</label><br>
-                    <input type="text" id="name"><br>
-                    <label for="phone">telefono</label><br>
-                    <input type="tel" id="phone"><br>
-                    <label for="numberBicicles">numero de bicicletas</label><br>
-                    <input type="number" id="numberBicicles"><br>
+                    <input type="text" id="name" required minlength="3" pattern="^[a-zA-Z]{3,}$" title="use at least 3 chars"><br>
+                    <label for="identification">documento</label><br>
+                    <input type="text" id="identification" required pattern="^[0-9]{6,10}$" title="only numbers beetwen 6 and 10 digits"><br>
+                    <label for="email">email</label><br>
+                    <input type="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="please use a valid eamil adreess"><br>
+                    <label for="phone">celular</label><br>
+                    <input type="tel" id="phone" value="3" pattern="^3\d{9}$" title="only numbers starting with 3 less than 10 digits"><br>
+
                     <label for="schedule">schedule</label><br>
                     <input type="radio" id="schedule">manana
                     <input type="radio" id="schedule">tarde
-                    <label for="obervations">observaciones adicionales</label><br>
-                    <textarea name="obervations" id="observations"></textarea>
+
                 </fieldset>
                 <fieldset>
                     <legend>
-                        Tu alquiler                        
+                        Tu alquiler
                     </legend>
-                    <label for="date">fecha</label><br>
-                        <input type="date" id="date"><br>
-                        <label for="">tipo de bicicleta</label><br>
-                        <select name="opciones" id="opciones">
-                            <option value="mountain">mountain</option>
-                            <option value="route">route</option>
-                            <option value="street">street</option>
-                        </select>
+                    <label for="startDate">fecha inicial</label><br>
+                    <input type="date" id="startDate" min="2026-11-01" max="2026-12-31"><br>
+
+                    <label for="">tipo de bicicleta</label><br>
+                    <select name="opciones" id="opciones">
+                        <option value="mountain">mountain</option>
+                        <option value="route">route</option>
+                        <option value="street">street</option>
+                    </select><br>
+                    <label for="plan">plan</label><br>                    
+                    <input type="radio" id="plan">pro<br>
+                    <input type="radio" id="plan">premium<br>
+                    <label for="numberBicicles">numero de bicicletas</label><br>
+                    <input type="number" id="numberBicicles" min="1" max="6"><br>
+                    <label for="comments">comentarios</label><br>
+                    <textarea name="comments" id="comments" maxlength="300"></textarea>
                 </fieldset>
                 <fieldset>
-                    <legend>Confirmacion</legend>
-                    <label for="Confirmacion">confirmacion</label>
-                    <input type="checkbox">
+                    <legend>politicas de alquiler</legend>
+                    <label for="politics">confirmacion</label>
+                    <input type="checkbox" id="politics" required>
                 </fieldset>
                 <button type="submit">Enviar</button>
             </form>
