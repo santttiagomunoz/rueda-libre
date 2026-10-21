@@ -39,3 +39,13 @@ tipo bici   mountain      seletor shows option mountain          selector shows 
 num bicis    7             input doesnot allow pic 7              input doesnot allow pic 7   
 plan       pro              activates radio button                  radio button activated 
 
+
+registro de auditoria
+
+1- las etiquetas no tenian el atributo tabindex para ser seleccionadas y
+navegable solo con el teclado
+2- se agrego el atributo tabindex a los titulos y secciones que lo requerian
+
+mapa de uso de color 
+
+sin registros

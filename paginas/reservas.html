@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <header>
+    <header tabindex="0">
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -23,7 +23,7 @@
         <section>
             <a href="mailto:correo@gmail.com">correo de contacto</a>
 
-            <h3>horario de atencion</h3>
+            <h3 tabindex="0">horario de atencion</h3>
             <dl>
                 <dt>lunes a viernes</dt>
                 <dd>
@@ -40,13 +40,17 @@
                 <fieldset name="info">
                     <legend>Tus datos</legend>
                     <label for="name">nombre</label><br>
-                    <input type="text" id="name" required minlength="3" pattern="^[a-zA-Z]{3,}$" title="use at least 3 chars"><br>
+                    <input type="text" id="name" required minlength="3" pattern="^[a-zA-Z]{3,}$"
+                        title="use at least 3 chars"><br>
                     <label for="identification">documento</label><br>
-                    <input type="text" id="identification" required pattern="^[0-9]{6,10}$" title="only numbers beetwen 6 and 10 digits"><br>
+                    <input type="text" id="identification" required pattern="^[0-9]{6,10}$"
+                        title="only numbers beetwen 6 and 10 digits"><br>
                     <label for="email">email</label><br>
-                    <input type="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="please use a valid eamil adreess"><br>
+                    <input type="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        title="please use a valid eamil adreess"><br>
                     <label for="phone">celular</label><br>
-                    <input type="tel" id="phone" value="3" pattern="^3\d{9}$" title="only numbers starting with 3 less than 10 digits"><br>
+                    <input type="tel" id="phone" value="3" pattern="^3\d{9}$"
+                        title="only numbers starting with 3 less than 10 digits"><br>
 
                     <label for="schedule">schedule</label><br>
                     <input type="radio" id="schedule">manana
@@ -66,7 +70,7 @@
                         <option value="route">route</option>
                         <option value="street">street</option>
                     </select><br>
-                    <label for="plan">plan</label><br>                    
+                    <label for="plan">plan</label><br>
                     <input type="radio" id="plan">pro<br>
                     <input type="radio" id="plan">premium<br>
                     <label for="numberBicicles">numero de bicicletas</label><br>
