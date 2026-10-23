@@ -80,3 +80,16 @@ http://127.0.0.1:5500/index.html
 
 URL del sitio publicado en github pages
 https://santttiagomunoz.github.io/rueda-libre/
+
+
+descripcion de problema de la clase activo
+
+- la clase no se aplica por anteriormente se creo el id 
+#menu el cual tiene prelacion sobre los estilos segun su jerarquia
+al tener #menu a se le da prioridad a la propiedades de menu
+y se le aplicaran a todas las etiquetas a que esten dentro de #menu
+
+especificidad
+1- !importa
+2- id
+3- clases

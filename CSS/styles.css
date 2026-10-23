@@ -5,10 +5,10 @@
 }
 
 :root {
-    --fondo: #FAF6EF;
-    --color-texto: #5B6470;
-    --color-buttons: #1E7A4F;
-    --color-titles: #14213D;
+    --crema: #FAF6EF;
+    --gris-asfalto: #5B6470;
+    --verte-ruta: #1E7A4F;
+    --azul-noche: #14213D;
     --color-content: #F39A2B;
     --font-montserrat: 'Montserrat', sans-serif;
     --font-open-sans: 'Open Sans', sans-serif;
@@ -17,10 +17,57 @@
 
 body{
     font-family: var(--font-montserrat), var(--font-open-sans);    
-    background-color: var(--fondo);
-    color: var(--color-texto);
+    background-color: var(--crema);
+    color: var(--gris-asfalto);
 }
 
 h1{
-    color: var(--color-titles);
+    color: var(--azul-noche);
 }
+
+.menu a{
+    color: var(--gris-asfalto);    
+}
+#menu:hover a{
+    color: var(--azul-noche);
+}
+#menu a:focus{
+    background-color: var(--azul-noche);
+}
+
+#activo{
+    color: var(--verte-ruta); font-weight: 600; 
+}
+
+.reservar{
+    padding: 7px;
+    color: var(--crema);
+    background-color: var(--verte-ruta);
+    border-radius: 50px;
+}
+
+.reservar:hover, .reservar:focus{
+    background-color: var(--azul-noche);
+}
+
+/* Estilo base del input */
+input, select, textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Reemplazo del indicador de foco para navegación por teclado */
+input:focus-visible, 
+select:focus-visible, 
+textarea:focus-visible {
+  /* 1. Quitamos el contorno predeterminado del navegador */
+  outline: none; 
+  
+  /* 2. Añadimos un indicador alternativo claro y llamativo */
+  border-color: #2563eb; /* Cambia el color del borde */
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25); /* Crea un halo o "glow" alrededor */
+}
+
