@@ -50,8 +50,13 @@ navegable solo con el teclado
 --------------------------------------------------------------------------------------
 mapa de uso de color 
 --------------------------------------------------------------------------------------
-color                    |  contraste                             | aprobado (AA/AAA)
+color                    |  contraste                             | aprobado (AA/AAA)   
 
+verdeRuta #1E7A4F but
+naranjaPedal #F39A2B De
+azulNoche #14213D tit
+crema #FAF6EF fon
+grisAsfalto #5B6470 sec
 blanco/verdeRuta         | 5.04:1                                 | aprobado AA
 blanco/naranjaPedal      | 2.18:1                                 | No aprobado 
 azulNoche/naranjaPedal   | 7.00:1                                 | aprobado AAA
@@ -62,8 +67,16 @@ naranjaPedal/crema       | 2.05:1                                 | No aprobado
 blanco/azulNoche         | 15.24:1                                 | aprobado AAA
 
 
+propiedades heredadas del body      | propiedades no heredadas
+---------------------------------------------------------------------
+-background-color                      font-display
+-color
+-font-family
 
-sin registros
+
+
+liveServer
+http://127.0.0.1:5500/index.html
 
 URL del sitio publicado en github pages
 https://santttiagomunoz.github.io/rueda-libre/

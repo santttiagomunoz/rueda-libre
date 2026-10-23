@@ -5,17 +5,22 @@
 }
 
 :root {
-    --redColor: red;
-    --blueColor: blue;
-    --yellowColor: yellow;
-    --purpleColor: purple;
-    --whiteColor: white;
+    --fondo: #FAF6EF;
+    --color-texto: #5B6470;
+    --color-buttons: #1E7A4F;
+    --color-titles: #14213D;
+    --color-content: #F39A2B;
     --font-montserrat: 'Montserrat', sans-serif;
     --font-open-sans: 'Open Sans', sans-serif;
     --space: 3 * rem;
 }
 
 body{
-    font-family: var(--font-montserrat), var(--font-open-sans);
-    
+    font-family: var(--font-montserrat), var(--font-open-sans);    
+    background-color: var(--fondo);
+    color: var(--color-texto);
+}
+
+h1{
+    color: var(--color-titles);
 }
