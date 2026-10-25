@@ -9,7 +9,7 @@
     --gris-asfalto: #5B6470;
     --verte-ruta: #1E7A4F;
     --azul-noche: #14213D;
-    --color-content: #F39A2B;
+    --naranja: #F39A2B;
     --font-montserrat: 'Montserrat', sans-serif;
     --font-open-sans: 'Open Sans', sans-serif;
     --space: 3 * rem;
@@ -24,12 +24,21 @@ body{
 h1{
     color: var(--azul-noche);
 }
-
-.menu a{
-    color: var(--gris-asfalto);    
+#menu {
+    display: flex;    
+    flex-direction: row;      
 }
-#menu:hover a{
-    color: var(--azul-noche);
+#menu li{
+    margin-right: 5rem;
+    list-style: none;
+}
+
+#menu a{
+    color: var(--gris-asfalto);  
+    text-decoration: none;  
+}
+#menu  a:hover{
+    color: var(--naranja);
 }
 #menu a:focus{
     background-color: var(--azul-noche);
@@ -69,5 +78,76 @@ textarea:focus-visible {
   /* 2. Añadimos un indicador alternativo claro y llamativo */
   border-color: #2563eb; /* Cambia el color del borde */
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25); /* Crea un halo o "glow" alrededor */
+}
+
+main{
+    width: 100%;
+    min-width: 50rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.portada{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+article{
+    padding: var(--spacing-md, 1.5rem);
+    border: 1px solid var(--azul-noche);
+    border-radius: var(--radius-md, 0.625rem);
+    margin-bottom: var(--spacing-lg, 1rem);
+    background-color: var(--crema);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm, 1rem);
+    overflow: hidden;    
+}
+
+article img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.tablas{
+    width: 100%;    
+    min-width: 50rem;
+    border: 1px solid var(--azul-noche);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;   
+}
+
+.tablas th, .tablas td{
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--azul-noche);
+}
+
+.tablas th{
+    color: var(--crema);
+    background-color: var(--azul-noche);
+    font-weight: 600;
+}
+
+form input{
+    width: 100%;
+}
+form button{
+    padding: 10px 20px;
+}
+form fieldset{
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
 }
 

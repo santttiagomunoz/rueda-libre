@@ -93,3 +93,7 @@ especificidad
 1- !importa
 2- id
 3- clases
+
+nota:
+antes de agregar un border box el articulo mide 1325x69
+despues de agregar border mide 1267x69
