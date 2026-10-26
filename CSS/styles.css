@@ -24,6 +24,8 @@ body{
 h1{
     color: var(--azul-noche);
 }
+
+/*Menu y contenido de menu*/
 #menu {
     display: flex;    
     flex-direction: row;      
@@ -48,6 +50,7 @@ h1{
     color: var(--verte-ruta); font-weight: 600; 
 }
 
+/*campos de formulario*/
 .reservar{
     padding: 7px;
     color: var(--crema);
@@ -80,6 +83,7 @@ textarea:focus-visible {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25); /* Crea un halo o "glow" alrededor */
 }
 
+/*contenido principal de index.html*/
 main{
     width: 100%;
     min-width: 50rem;
@@ -120,6 +124,7 @@ article img{
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
+/*tabls de la pagina tarifas.html*/
 .tablas{
     width: 100%;    
     min-width: 50rem;
@@ -139,7 +144,7 @@ article img{
     background-color: var(--azul-noche);
     font-weight: 600;
 }
-
+/*formulario de la pagina reservas.html*/
 form input{
     width: 100%;
 }
@@ -150,4 +155,26 @@ form fieldset{
     margin-bottom: 1rem;
     border-radius: 0.5rem;
 }
-
+/*link de wpp*/
+.wppLink{
+    position: fixed;       /* Lo fija en la pantalla sin importar el scroll */
+    bottom: 20px;          /* Separación de 20 píxeles desde el borde inferior */
+    right: 20px;           /* Separación de 20 píxeles desde el borde derecho */
+    z-index: 1000;         /* Se asegura de que flote por encima de cualquier otro contenido */
+    
+    /* Estilos visuales opcionales para que parezca un botón redondo limpio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--verte-ruta); /* Color azul */
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;    /* Hace el botón perfectamente redondo */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+    transition: background-color 2s ease; /* Animación suave para el hover */
+}
+.wppLink:hover{
+    background-color: #14213D;
+}

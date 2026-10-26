@@ -97,3 +97,16 @@ especificidad
 nota:
 antes de agregar un border box el articulo mide 1325x69
 despues de agregar border mide 1267x69
+
+cierre de miniRetos semana 1
+
+descripcion de lo realizado
+
+se realizo la estructura de una pagina web simple, donde
+se aplicaron conceptos como semantica web que es la estructura en base a las etiquetas de html 
+se realizaron tablas, formularios, listas, tarjetas.
+se reviso la paleta de color y el contraste entre varias combinaciones 
+se aplicaron estilos con css.
+
+mejoraria la descripcion de los requerimientos para asi agilizar el proceso de maquetado.
+
