@@ -25,20 +25,25 @@ h1{
     color: var(--azul-noche);
 }
 
-/*Menu y contenido de menu*/
+/* Menu y contenido de menu*/
+
 #menu {
     display: flex;    
-    flex-direction: row;      
-}
+    flex-direction: row;    
+    flex-wrap: wrap;  
+} 
+
 #menu li{
     margin-right: 5rem;
-    list-style: none;
+    list-style: none;    
 }
 
 #menu a{
     color: var(--gris-asfalto);  
     text-decoration: none;  
+    flex-wrap: wrap;
 }
+
 #menu  a:hover{
     color: var(--naranja);
 }
@@ -177,4 +182,18 @@ form fieldset{
 }
 .wppLink:hover{
     background-color: #14213D;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-around;
 }

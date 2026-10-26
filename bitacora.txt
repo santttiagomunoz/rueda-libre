@@ -110,3 +110,9 @@ se aplicaron estilos con css.
 
 mejoraria la descripcion de los requerimientos para asi agilizar el proceso de maquetado.
 
+
+
+Descripcion flex wrap al encojer la pantalla
+
+los elemnetos de el l barra de navegacion se ponen en columna al encojer la pantalla
+en el footer con space-around se expanden y se encojen segun el ancho
