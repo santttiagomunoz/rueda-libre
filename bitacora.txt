@@ -116,3 +116,11 @@ Descripcion flex wrap al encojer la pantalla
 
 los elemnetos de el l barra de navegacion se ponen en columna al encojer la pantalla
 en el footer con space-around se expanden y se encojen segun el ancho
+
+
+registro de columnas con diferente ancho
+ a 1280px = 5columnas
+ a 900px = 3columnas
+ a 500px = 1columna 
+
+ 
