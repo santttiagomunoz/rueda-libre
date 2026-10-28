@@ -106,11 +106,15 @@ main{
 
 .portada{
     min-height: 80vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
     align-items: center;
-    text-align: center;
+}
+.portada img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 article{
@@ -211,5 +215,22 @@ footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+}
+
+/*seccion nuestras rutas*/
+.rutas{
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* formulario en proporcion de 2:1*/
+.formularios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.camposSeguidos{
+    display: flex;   
+    gap: 10px; 
 }
 

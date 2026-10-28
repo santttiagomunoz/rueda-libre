@@ -123,4 +123,17 @@ registro de columnas con diferente ancho
  a 900px = 3columnas
  a 500px = 1columna 
 
- 
+
+ Descripcion de cambios en Portada, galeria, reservas
+
+ para la portadas se utilizo grid, se dividio el contenido en
+ 2 section para poder aplicarlo
+
+ galeria
+ se utilizo flex, ya que solo se necesitaba una fila 
+ con 3 fotos 
+
+ reservas
+ se utilizo grid para separar el form de reserva del form de
+ datos y flex para porner 2 campos relacionados en la misma
+ fila
