@@ -137,3 +137,7 @@ registro de columnas con diferente ancho
  se utilizo grid para separar el form de reserva del form de
  datos y flex para porner 2 campos relacionados en la misma
  fila
+
+ porblemas encontrados
+ 
+ no pude eliminar el scroll horizontal y no pude resolverlos

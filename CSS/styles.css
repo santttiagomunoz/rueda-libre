@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 :root {
     --crema: #FAF6EF;
     --gris-asfalto: #5B6470;
@@ -99,7 +101,7 @@ textarea:focus-visible {
 /*contenido principal de index.html*/
 main{
     width: 100%;
-    min-width: 50rem;
+    /* min-width: 50rem; */
     margin: 0 auto;
     padding: 1.5rem;
 }
@@ -142,25 +144,36 @@ article img{
 }
 
 /*tabls de la pagina tarifas.html*/
-.tablas{
+.tablas{        
     width: 100%;    
-    min-width: 50rem;
+    max-width: 100%;                     
     border: 1px solid var(--azul-noche);
     border-radius: 0.5rem;
     margin-bottom: 1rem;   
+    /* table-layout: auto; */
+    border-collapse: collapse;
 }
 
-.tablas th, .tablas td{
-    padding: 1rem;
+.tablas th, .tablas td {
+    padding: 1px;
     text-align: center;
-    border-bottom: 1px solid var(--azul-noche);
+    border-bottom: 1px solid var(--azul-noche);    
 }
+
 
 .tablas th{
     color: var(--crema);
     background-color: var(--azul-noche);
     font-weight: 600;
 }
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 /*formulario de la pagina reservas.html*/
 form input{
     width: 100%;
@@ -234,3 +247,10 @@ footer{
     gap: 10px; 
 }
 
+/*media queries para tablet y escritorio*/
+@media (max-width: 768px) {
+    .encabezado{
+        display: flex;
+        flex-direction: column-reverse;
+    }    
+}
