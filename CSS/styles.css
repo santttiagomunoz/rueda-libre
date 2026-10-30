@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -32,11 +32,11 @@ body{
 
 h1{
     color: var(--azul-noche);
-}
+} */
 
 /* Menu y contenido de menu*/
 
-#menu {
+/* #menu {
     display: flex;    
     flex-direction: row;    
     flex-wrap: wrap;  
@@ -63,12 +63,12 @@ h1{
 
 #activo{
     color: var(--verte-ruta); font-weight: 600; 
-}
+} */
 
 
 
 /*campos de formulario*/
-.reservar{
+/* .reservar{
     padding: 7px;
     color: var(--crema);
     background-color: var(--verte-ruta);
@@ -77,33 +77,32 @@ h1{
 
 .reservar:hover, .reservar:focus{
     background-color: var(--azul-noche);
-}
+} */
 
 /* Estilo base del input */
-input, select, textarea {
+/* input, select, textarea {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 4px;
   font-size: 1rem;
   transition: border-color 0.2s, box-shadow 0.2s;
-}
+} */
 
 /* Reemplazo del indicador de foco para navegación por teclado */
-input:focus-visible, 
+/* input:focus-visible, 
 select:focus-visible, 
 textarea:focus-visible {
-  /* 1. Quitamos el contorno predeterminado del navegador */
+  
   outline: none; 
   
-  /* 2. Añadimos un indicador alternativo claro y llamativo */
-  border-color: #2563eb; /* Cambia el color del borde */
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25); /* Crea un halo o "glow" alrededor */
-}
+  
+  border-color: #2563eb; 
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25); 
+} */
 
 /*contenido principal de index.html*/
-main{
-    width: 100%;
-    /* min-width: 50rem; */
+/* main{
+    width: 100%;   
     margin: 0;
     padding:0;
 }
@@ -149,10 +148,10 @@ article img{
 .servicios{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}
+} */
 
 /*tabls de la pagina tarifas.html*/
-.container-tablas{
+/* .container-tablas{
     width: 100%;
     overflow: auto;
     margin-bottom: 1rem;
@@ -188,10 +187,10 @@ article img{
 .container{
     display: grid;
     grid-template-columns: 1fr;
-}
+} */
 
 /*formulario de la pagina reservas.html*/
-form input{
+/* form input{
     width: 100%;
 }
 form button{
@@ -200,60 +199,60 @@ form button{
 form fieldset{
     margin-bottom: 1rem;
     border-radius: 0.5rem;
-}
+} */
 /*link de wpp*/
-.wppLink{
-    position: fixed;       /* Lo fija en la pantalla sin importar el scroll */
-    bottom: 20px;          /* Separación de 20 píxeles desde el borde inferior */
-    right: 20px;           /* Separación de 20 píxeles desde el borde derecho */
-    z-index: 1000;         /* Se asegura de que flote por encima de cualquier otro contenido */
+/* .wppLink{
+    position: fixed;       
+    bottom: 20px;          
+    right: 20px;          
+    z-index: 1000;         
     
-    /* Estilos visuales opcionales para que parezca un botón redondo limpio */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: var(--verte-ruta); /* Color azul */
+    background-color: var(--verte-ruta); 
     color: white;
     text-decoration: none;
-    border-radius: 50%;    /* Hace el botón perfectamente redondo */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
-    transition: background-color 2s ease; /* Animación suave para el hover */
-}
-.wppLink:hover{
-    background-color: #14213D;
+    border-radius: 50%;  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    transition: background-color 2s ease; 
 }
 
-.encabezado{
+.wppLink:hover{
+    background-color: #14213D;
+} */
+
+/* .encabezado{
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
-}
+} */
 
-footer{
+/* footer{
     display: flex;
     flex-direction: row;    
     align-items: center;
     justify-content: space-around;
-}
+} */
 
 /*modelos de bicicletas*/
-.models{
+/* .models{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-}
+} */
 
 /*seccion nuestras rutas*/
-.rutas{
+/* .rutas{
     display: flex;
     gap: 1.5rem;
-}
+} */
 
 /* formulario en proporcion de 2:1*/
-.formularios{
+/* .formularios{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -261,12 +260,12 @@ footer{
 .camposSeguidos{
     display: flex;   
     gap: 10px; 
-}
+} */
 
 /*media queries para tablet y escritorio*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .encabezado{
         display: flex;
         flex-direction: column-reverse;
     }    
-}
+} */
