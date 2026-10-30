@@ -5,7 +5,6 @@
 }
 
 
-
 :root {
     --crema: #FAF6EF;
     --gris-asfalto: #5B6470;
@@ -41,10 +40,11 @@ h1{
     display: flex;    
     flex-direction: row;    
     flex-wrap: wrap;  
+    gap: 1rem;
 } 
 
 #menu li{
-    margin-right: 5rem;
+    margin-right: 0;
     list-style: none;    
 }
 
@@ -64,6 +64,8 @@ h1{
 #activo{
     color: var(--verte-ruta); font-weight: 600; 
 }
+
+
 
 /*campos de formulario*/
 .reservar{
@@ -102,8 +104,13 @@ textarea:focus-visible {
 main{
     width: 100%;
     /* min-width: 50rem; */
-    margin: 0 auto;
-    padding: 1.5rem;
+    margin: 0;
+    padding:0;
+}
+
+main img{
+    width: 100%;
+    height: auto;
 }
 
 .portada{
@@ -129,8 +136,9 @@ article{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm, 1rem);
-    overflow: hidden;    
+    overflow: hidden;        
 }
+
 
 article img{
     width: 100%;
@@ -144,21 +152,29 @@ article img{
 }
 
 /*tabls de la pagina tarifas.html*/
+.container-tablas{
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 1rem;
+}
+
 .tablas{        
     width: 100%;    
-    max-width: 100%;                     
+    min-width: 360px;                     
     border: 1px solid var(--azul-noche);
     border-radius: 0.5rem;
     margin-bottom: 1rem;   
-    /* table-layout: auto; */
     border-collapse: collapse;
+    overflow: hidden;
 }
 
 .tablas th, .tablas td {
-    padding: 1px;
+    padding: 8px 12px;
     text-align: center;
     border-bottom: 1px solid var(--azul-noche);    
 }
+
+
 
 
 .tablas th{

@@ -141,3 +141,15 @@ registro de columnas con diferente ancho
  porblemas encontrados
  
  no pude eliminar el scroll horizontal y no pude resolverlos
+
+
+ registro semana 2 dia 2
+Aplicando el framework bootsrapt se demoro aproximadamente 20min
+aplicar los estilos requeridos debido al tiempo que tomo entender
+su funcionamiento
+
+clases encontradas en bootsrapt
+d-flex actua como display flex
+d-none actua como idplay none
+rounded sirve para darle un border radious a los elemnetos
+mb sirve para darle margin bottom
