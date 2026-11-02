@@ -153,3 +153,12 @@ d-flex actua como display flex
 d-none actua como idplay none
 rounded sirve para darle un border radious a los elemnetos
 mb sirve para darle margin bottom
+
+defectos encontrados
+
+no se aplica ninguna clase ya que se comento todo el codigo de ccs propio
+
+Pruebas a 360px 768px y 1280px
+
+aunque los estilos se dejaron de aplicar y se reemplazaron principalmente por clases como container y row para empezar
+a realizar la estructura con bootsraptse puede ver que estas son responsive

@@ -12,173 +12,325 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">        
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
 <body>
-    <header class="container">
-        <div class="row">
-           <nav class="" tabindex="1">            
-              <ul class="list-unstyled">
-                <li><a class="text-decoration-none" href="./index.html" id="activo">Home</a></li>
-                <li><a class="text-decoration-none" href="./paginas/reservas.html">Reservas</a></li>
-                <li><a class="text-decoration-none" href="./paginas/tarifas.html">Tarifas</a></li>
-            </ul>                         
-        </nav>
-        <h3 class="mainName">Rueda Libre | Aquiler de bicicletas Medellin</h3> 
-        </div>        
-    </header>    
-    <main class="">
-        <section>
+    <header class="container my-3">
+        <div class="row align-items-center justify-content-between">
+            <nav class="col" tabindex="1">
+                <ul class="d-flex gap-3 list-unstyled">
+                    <li><a class="text-decoration-none link-secondary" href="./index.html" id="activo">Home</a></li>
+                    <li><a class="text-decoration-none link-secondary" href="./paginas/reservas.html">Reservas</a></li>
+                    <li><a class="text-decoration-none link-secondary" href="./paginas/tarifas.html">Tarifas</a></li>
+                </ul>
+            </nav>
+            <h3 class="col fs-4 m-0">Rueda Libre | Aquiler de bicicletas Medellin</h3>
+        </div>
+    </header>
+    <main class="container my-3">
+        <section class="row align-items-center">
+            <section class="col-12 col-md-7">
 
-           <h3>bienvenido al nuevo negocio emerge supercool</h3>
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam laudantium exercitationem unde amet, sit, alias repellat illo iure consequatur error in sunt mollitia dolor perferendis sequi esse minima ducimus a!</p>
-            
-        </section>
-        <section>
-            <img src="./img/portada.png" alt="">
-        </section>        
-        </main>
-                
-        <section>
-            <h2 name="subQuienesSomos" id="subQuienes somos" tabindex="0">quienes somos</h2>
-            <h2>hola</h2>
-            <p>
-                <a href="#encuentranos">ve a encuentranos</a>
-            </p>
-            <img src="./img/imagen.png" alt="imagen de rines de bicicleta" width="300">
-            <img src="./img/imagen2.png" alt="imagen de bicicletas antiguas 1" width="300" height="169">
-            <img src="./img/imagen3.png" alt="imagen de bicicletas antiguas 2" width="300" height="169">
-        </section>
-        <h3>nuestras rutas</h3>
-        <section class="">
-            <article>
-                <img src="./img/ruta1.png" alt="">
-                <h4>descripcion</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vel nam explicabo? Sequi unde quisquam quo quaerat sint nihil voluptatem sed fugit beatae, debitis aliquam nulla suscipit, temporibus odit.</p>
-            </article>
-            <article>
-                <img src="./img/ruta2.png" alt="">
-                <h4>descripcion</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vel nam explicabo? Sequi unde quisquam quo quaerat sint nihil voluptatem sed fugit beatae, debitis aliquam nulla suscipit, temporibus odit.</p>
-            </article>
-            <article>
-                <img src="./img/ruta3.png" alt="">
-                <h4>descripcion</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vel nam explicabo? Sequi unde quisquam quo quaerat sint nihil voluptatem sed fugit beatae, debitis aliquam nulla suscipit, temporibus odit.</p>
-            </article>
-        </section>
+                <h1 class="fw-bold">bienvenido a Rueda Libre</h1>
+                <h3 class="fs-5 text-muted mb-3">El nuevo negocio de bicilcletas de Medellin</h3>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam laudantium
+                    exercitationem unde
+                    amet, sit, alias repellat illo iure consequatur error in sunt mollitia dolor perferendis sequi esse
+                    minima ducimus a!</p>
 
-        <h3>nuestra flota</h3>
-
-        <section class="">            
-            <article>
-                <img src="./img/imagen.png" alt="">
-                <h3>Urbana clasica</h3>
-                <p>Comoda liviana para las ciclorutas</p>
-                <span>precio: 10000</span>
-                <strong><a href="./paginas/reservas.html">Reservar ahora</a></strong>
-            </article>
-            <article>
-                <img src="./img/imagen.png" alt="">
-                <h3>Urbana plegable</h3>
-                <p>Se dobla en segundos</p>
-                <span>precio: 12000</span>
-                <strong><a href="./paginas/reservas.html">Reservar ahora</a></strong>
-            </article>
-            <article>
-                <img src="./img/imagen.png" alt="">
-                <h3>Montana trail</h3>
-                <p>Suspencion delantera y 21 cambios para las subidas</p>
-                <span>precio: 15000</span>
-                <strong><a href="./paginas/reservas.html">Reservar ahora</a></strong>
-            </article>
-            <article>
-                <img src="./img/imagen.png" alt="">
-                <h3>Gravel aventura</h3>
-                <p>Para rutas mixtas y asfaltos destapados</p>
-                <span>precio: 18000</span>
-                <strong><a href="./paginas/reservas.html">Reservar ahora</a></strong>
-            </article>
-            <article>
-                <img src="./img/imagen.png" alt="">
-                <h3>Electrica urbana</h3>
-                <p>Asistencia electrica con 45km de autonomia</p>
-                <span>precio: 25000</span>
-                <strong><a href="./paginas/reservas.html">Reservar ahora</a></strong>
-            </article>
-            <article>
-                <img src="./img/imagen.png" alt="">
-                <h3>Infantil</h3>
-                <p>para ninos de 6 a 10 anios</p>
-                <span>precio: 8000</span>
-                <strong><a href="./paginas/reservas.html">Reservar ahora</a></strong>
-            </article>
-            <article>
-                <img src="./img/imagen.png" alt="">
-                <h3>Tandem para dos personas</h3>
-                <p>Perfecta para pasear en pareja</p>
-                <span>precio: 20000</span>
-                <strong><a href="./paginas/reservas.html">Reservar ahora</a></strong>
-            </article>
-        </section>
-        <section >
-            <h2 tabindex="0">Nuestros servicios</h2>
-
-            <section>
-               <article class="">
-                <h4 tabindex="0">alquiler de bicicletas</h4>
-            </article>
-            <article>
-                <h4 tabindex="0">mantenimiento de bicicletas</h4>
-            </article>
-            <article>
-                <label for="">"Nuevo"</label>
-                <h4 tabindex="0">Bicicletas Electricas</h4>
-            </article> 
             </section>
-            
-
-            <h4><a href="./paginas/tarifas.html">Recorrido guiado</a></h4>
-            <aside>
-                <em>cada bicicleta incluye casco para prevenir dano en el cerebro</em> <br>
-                <em>cuenta con asistencia tecnica alrederor de 5 kilometros</em>
-            </aside>
-
-
+            <section class="col-12 col-md-5">
+                <img class="img-fluid rounded shadow-lg" src="./img/portada.png" alt="">
+            </section>
         </section>
-        <section>
-            <h2 tabindex="0">Como alquilar</h2>
 
-            <p>
-            <ol>
-                <li>selececionar la bicicleta</li>
-                <li>seleccionar la fecha de entrega</li>
-                <li>pagar la factura</li>
-                <li>sacar la bicicleta</li>
-            </ol>
-            <ul>
-                <li>10% off por ser primera vez en alquilar</li>
-            </ul>
-            </p>
-            <a href="./paginas/reservas.html" class="reservar">Reservar ahora</a>
+    </main>
+
+    <section class="container my-3">
+        <h1 class="fw-bold" tabindex="0">Quienes somos</h1>
+        <p class="text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A porro totam fugit esse, similique, earum itaque
+            voluptatem officia quam quae non? Soluta deleniti a recusandae atque omnis assumenda, fugiat ipsa!
+        </p>
+        <a class="fw-bold text-decoration-none link-secondary " href="#encuentranos">ve a encuentranos</a>
+
+        <div class="row g-4 align-items-center">
+            <div class="col-12 col-md-4">
+                <img class="card-img-top rounded" style="height: 200px; object-fit: cover;" src="./img/imagen.png"
+                    alt="imagen de rines de bicicleta">
+            </div>
+            <div class="col-12 col-md-4">
+                <img class="card-img-top rounded" style="height: 200px; object-fit: cover;" src="./img/imagen2.png"
+                    alt="imagen de bicicletas antiguas 1">
+            </div>
+            <div class="col-12 col-md-4">
+                <img class="card-img-top rounded" style="height: 200px; object-fit: cover;" src="./img/imagen3.png"
+                    alt="imagen de bicicletas antiguas 2">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container">
+        <h1 class="fw-bold">Nuestras rutas</h1>
+        <div class="row align-items-center">
+            <article class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" style="height: 160px; object-fit: cover;" src="./img/ruta1.png" alt="">
+                </div>
+
+                <h4>descripcion</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vel nam explicabo? Sequi unde
+                    quisquam quo quaerat sint nihil voluptatem sed fugit beatae, debitis aliquam nulla suscipit,
+                    temporibus
+                    odit.</p>
+            </article>
+            <article class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" style="height: 160px; object-fit: cover;" src="./img/ruta2.png" alt="">
+                </div>
+                <h4>descripcion</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vel nam explicabo? Sequi unde
+                    quisquam quo quaerat sint nihil voluptatem sed fugit beatae, debitis aliquam nulla suscipit,
+                    temporibus
+                    odit.</p>
+            </article>
+            <article class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" style="height: 160px; object-fit: cover;" src="./img/ruta3.png" alt="">
+                </div>
+                <h4>descripcion</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vel nam explicabo? Sequi unde
+                    quisquam quo quaerat sint nihil voluptatem sed fugit beatae, debitis aliquam nulla suscipit,
+                    temporibus
+                    odit.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3 class="fw-bold">Nuestra flota</h3>
+        <div class="row g-4">
+            <article class="col-12 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" src="./img/imagen.png" alt="" style="height: 160px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title fs-5">Urbana clasica</h3>
+                        <p class="card-text text-muted small">Comoda liviana para las ciclorutas</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold mb-2">precio: 10000</p>
+                            <a class="btn btn-outline-primary btn-sm w-100" href="./paginas/reservas.html">Reservar
+                                ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" src="./img/imagen.png" alt="" style="height: 160px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title fs-5">Urbana plegable</h3>
+                        <p class="card-title text-muted small">Se dobla en segundos</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold mb-2">precio: 12000</p>
+                            <a class="btn btn-outline-primary btn-sm w-100" href="./paginas/reservas.html">Reservar
+                                ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" src="./img/imagen.png" alt="" style="height: 160px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title fs-5">Mountain trail</h3>
+                        <p class="card-text text-muted small">Suspencion delantera y 21 cambios para las subidas</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold mb-2">precio: 12000</p>
+                            <a class="btn btn-outline-primary btn-sm w-100" href="./paginas/reservas.html">Reservar
+                                ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" src="./img/imagen.png" alt="" style="height: 160px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title fs-5">Gravel aventura</h3>
+                        <p class="card-text text-muted small">Para rutas mixtas u asfaltos detapados</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold mb-2">precio: 18000</p>
+                            <a class="btn btn-outline-primary btn-sm w-100" href="./paginas/reservas.html">Reservar
+                                ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" src="./img/imagen.png" alt="" style="height: 160px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title fs-5">Electrica urbana</h3>
+                        <p class="card-text text-muted small">Asistencia electrica con 45km de autonomia</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold mb-2">precio: 25000</p>
+                            <a class="btn btn-outline-primary btn-sm w-100" href="./paginas/reservas.html">Reservar
+                                ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" src="./img/imagen.png" alt="" style="height: 160px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title fs-5">Infantil</h3>
+                        <p class="card-text text-muted small">Para ninios de 6 anios a 10 anios</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold mb-2">precio: 8000</p>
+                            <a class="btn btn-outline-primary btn-sm w-100" href="./paginas/reservas.html">Reservar
+                                ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" src="./img/imagen.png" alt="" style="height: 160px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title fs-5">Tandem para dos personas</h3>
+                        <p class="card-text text-muted small">Perfecta para pasear en pareja</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold mb-2">precio: 20000</p>
+                            <a class="btn btn-outline-primary btn-sm w-100" href="./paginas/reservas.html">Reservar
+                                ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="container my-3">
+        <h2 class="fw-bold mb-4" tabindex="0">Nuestros servicios</h2>
+        <section class="row g-4 align-items-center mb-3">
+            <article class="col-12 col-md-4">
+                <div class="card p-4 border-0 shadow-sm h-100 text-center">
+                    <h1 class="fs-5 mb-0" tabindex="0">alquiler de bicicletas</h1>
+                </div>
+            </article>
+            <article class="col-12 col-md-4">
+                <div class="card p-4 border-0 shadow-sm h-100 text-center">
+                    <h4 class="fs-5 mb-0" tabindex="0">mantenimiento de bicicletas</h4>
+                </div>
+            </article>
+            <article class="col-12 col-md-4">
+                <div class="card p-4 border-0 shadow-sm h-100 text-center">
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded bg-danger">"Nuevo"</span>
+                    <h4 class="fs-5 mb-0" tabindex="0">Bicicletas Electricas</h4>
+                </div>
+
+            </article>
         </section>
-        <section id="">
-            <h2 tabindex="0">encuentranos</h2>
-            <p>
-                <a href="mailto:hola@ruedalibre.example" target="_blank">escribenos</a>
-            </p>
-        </section>
-    
-    <a href="https://wa.me/573000000000" class="wppLink">WPP</a>
-    <footer>
-        <h3>marca</h3>
-        <a href="mailto:ruedalibre@gmail.com">contacto</a>
-        <h3>horario</h3>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-6">
+                <div class="p-4 bg-light rounded shadow-sm h-100 d-flex flex-column justify-content-center">
+                    <h4 class="fs-5 fw-bold mb-2">
+                        <a class="text-decoration-none text-primary" href="./paginas/tarifas.html">Recorrido guiado
+                            🚴‍♂️</a>
+                    </h4>
+                    <p class="text-muted mb-0 small">Explora los mejores paisajes y rutas de la ciudad con nuestros
+                        guías expertos.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="p-4 bg-light rounded shadow-sm h-100">
+                    <h5 class="fs-6 fw-bold mb-2">Incluido en tu alquiler:</h5>
+                    <aside class="text-muted small">
+                        <p class="mb-1"><em> helmet </em> Cada bicicleta incluye casco certificado para tu seguridad.
+                        </p>
+                        <p class="mb-0"><em>🛠️</em> Cuenta con asistencia técnica en ruta alrededor de 5 kilómetros.
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="container my-5">
+        <div class="p-5 bg-white rounded shadow-sm border">
+            <h2 class="fw-bold mb-4" tabindex="0">Cómo alquilar</h2>
+
+            <div class="row align-items-center">
+                <!-- Pasos numerados -->
+                <div class="col-12 col-md-8">
+                    <ol class="mb-4 fs-6">
+                        <li class="mb-2">Seleccionar la bicicleta de tu preferencia.</li>
+                        <li class="mb-2">Seleccionar la fecha de entrega y devolución.</li>
+                        <li class="mb-2">Pagar la factura de forma segura.</li>
+                        <li class="mb-2">¡Recoger tu bicicleta y rodar!</li>
+                    </ol>
+
+                    <!-- Aviso de descuento con un componente 'alert' de Bootstrap -->
+                    <div class="alert alert-success" role="alert">
+                        <span>🎉 <strong>10% off</strong> por ser tu primera vez alquilando con nosotros.</span>
+                    </div>
+                </div>
+
+                <!-- Botón de acción principal -->
+                <div class="col-12 col-md-4 text-center mt-4 mt-md-0">
+                    <a href="./paginas/reservas.html" class="btn btn-primary btn-lg w-100 shadow-sm">Reservar ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Encuéntranos -->
+    <section id="encuentranos" class="container my-5 text-center">
+        <div class="p-4 bg-light shadow-sm">
+            <h2 class="fw-bold mb-3" tabindex="0">Encuéntranos</h2>
+            <p class="text-muted mb-3">¿Tienes dudas o necesitas soporte personalizado?</p>
+            <a href="mailto:hola@ruedalibre.example" class="btn btn-outline-dark px-4" target="_blank">Escríbenos por
+                correo</a>
+        </div>
+    </section>
+
+    <!-- Botón flotante de WhatsApp usando clases de Bootstrap -->
+    <a href="https://wa.me/573000000000"
+        class="position-fixed bottom-0 end-0 m-4 btn btn-success rounded-circle p-3 shadow-lg d-flex align-items-center justify-content-center"
+        style="width: 60px; height: 60px; z-index: 1000;" target="_blank" aria-label="WhatsApp de Rueda Libre">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp"
+            viewBox="0 0 16 16">
+            <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.57 6.57 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.558 6.558 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.347.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.342l-.38-.003c-.133 0-.36.05-.548.248-.187.198-.715.698-.715 1.705 0 1.006.734 1.977.836 2.11,034.133 1.44 2.2 3.494 3.085.49.212.87.339 1.166.433.492.156.94.133 1.292.081.394-.059 1.17-.478 1.338-.94.168-.46.168-.854.118-.935-.05-.099-.183-.148-.381-.247z" />
+        </svg>
+    </a>
+    <footer class="container my-3 border-top">
+        <div class="row g-2 align-items-center mt-2">
+            <div class="col-12 col-md-8">
+                <h3 class="fw-bold mb-1">Rueda libre</h3>
+                <p class="text-muted small mb-0">
+                    Tu mejor opcion para rodar por toda Medellin.
+                </p>
+            </div>
+
+
+            <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+                <p class="mb-1 text-muted small"><strong>Horario:</strong> Lunes a Domingo</p>
+                <a class="text-decoration-none" href="mailto:ruedalibre@gmail.com">contacto</a>               
+            </div>
+        </div>
     </footer>
 </body>
 
