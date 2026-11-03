@@ -14,104 +14,180 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 
 <body>
-    <header tabindex="0" class="col-12 d-flex justify-content-around">
-        <nav class="row">
-            <ul id="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./reservas.html" id="activo">Reservas</a></li>
-                <li><a href="./tarifas.html">Tarifas</a></li>
-            </ul>
-        </nav>
-        <h1>Reserva tus bicicletas</h1>
+    <header class="container my-3" tabindex="0">
+        <div class="row align-items-center justify-content-between">
+            <nav class="col">
+                <ul class="d-flex list-unstyled gap-3" id="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./reservas.html" id="activo">Reservas</a></li>
+                    <li><a href="./tarifas.html">Tarifas</a></li>
+                </ul>
+            </nav>
+            <h3 class="col fs-4">Reserva tus bicicletas</h3>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <a href="mailto:correo@gmail.com">correo de contacto</a>
-
-            <h3 tabindex="0">horario de atencion</h3>
-            <dl>
-                <dt>lunes a viernes</dt>
-                <dd>
-                    <li>las rutas empiezan de a las 6 am</li>
-                </dd>
-                <dt>fines de semana</dt>
-                <dd>
-                    <li>las rutas empiezan a las 9 am</li>
-                </dd>
-            </dl>
-        </section>
-        <section>
-            <form action="POST" class="formularios">
-                <section>
-                    <fieldset>
-                        <legend>
-                            Tu alquiler
-                        </legend>
-                        <label for="startDate">fecha inicial</label><br>
-                        <input type="date" id="startDate" min="2026-11-01" max="2026-12-31"><br>
-
-                        <label for="">tipo de bicicleta</label><br>
-                        <select name="opciones" id="opciones">
-                            <option value="mountain">mountain</option>
-                            <option value="route">route</option>
-                            <option value="street">street</option>
-                        </select><br>
-                        <label for="plan">plan</label><br>
-                        <input type="radio" id="plan">pro<br>
-                        <input type="radio" id="plan">premium<br>
-                        <label for="numberBicicles">numero de bicicletas</label><br>
-                        <input type="number" id="numberBicicles" min="1" max="6"><br>
-                        <label for="comments">comentarios</label><br>
-                        <textarea name="comments" id="comments" maxlength="300"></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <legend>politicas de alquiler</legend>
-                        <label for="politics">confirmacion</label>
-                        <input type="checkbox" id="politics" required>
-                    </fieldset>
-                    <button type="submit">Enviar</button>
-                </section>
-                <section>
-                    <fieldset name="info">
-                        <legend>Tus datos</legend>
-                        <div class="camposSeguidos">
-                            <label for="name">nombre
-
-                                <input type="text" id="name" required minlength="3" pattern="^[a-zA-Z]{3,}$"
-                                    title="use at least 3 chars">
-                            </label>
-                            <label for="identification">documento
-                                <input type="text" id="identification" required pattern="^[0-9]{6,10}$"
-                                    title="only numbers beetwen 6 and 10 digits">
-                            </label>
-                        </div>
-
-                        <label for="email">email</label><br>
-                        <input type="email" id="email" required
-                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                            title="please use a valid eamil adreess"><br>
-                        <label for="phone">celular</label><br>
-                        <input type="tel" id="phone" value="3" pattern="^3\d{9}$"
-                            title="only numbers starting with 3 less than 10 digits"><br>
-
-                        <label for="schedule">schedule</label><br>
-                        <input type="radio" id="schedule">manana
-                        <input type="radio" id="schedule">tarde
-
-                    </fieldset>
-                </section>
-            </form>
+    <main class="container my-4">
+        <section class="row align-items-strech">
+            <div class="col-12 col-md-6">
+                <h2 class="fw-bold text-center" tabindex="0">horario de atencion</h2>
+                <dl class="mb-0">
+                    <dt class="fw-bold mt-2">lunes a viernes</dt>
+                    <dd class="text-secondary mb-2">
+                        las rutas empiezan de a las 6 am
+                    </dd>
+                    <dt class="fw-bold mt-3">fines de semana</dt>
+                    <dd class="text-secondary mb-0">
+                        las rutas empiezan a las 9 am
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-12 col-md-6">
+                <h2 class="fw-bold">Informacion de contacto</h2>
+                <p class="text-secondary mb-4">¿Tienes dudas o necesitas atención personalizada? Escríbenos
+                    directamente.</p>
+                <a href="mailto:correo@gmail.com">correo de contacto</a>
+            </div>
         </section>
     </main>
-    <footer>
-        <h1>Rueda libre</h1>
-        <a href="mailto:ruedalibre@gmail.com">ruedalibre@gmail.com</a>
-        <p>2026</p>
+
+   <section class="container my-5">
+    <div class="card shadow-sm border-0 p-4 bg-light">
+        <h2 class="fw-bold mb-4 text-center">Formulario de Reserva</h2>
+        
+        <form action="POST" class="needs-validation">
+            <div class="row g-4">
+                
+                <!-- Columna Izquierda: Tu Alquiler -->
+                <div class="col-12 col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <fieldset>
+                            <legend class="fw-bold fs-5 text-primary mb-3">Tu alquiler</legend>
+                            
+                            <!-- Fecha inicial -->
+                            <div class="mb-3">
+                                <label for="startDate" class="form-label">Fecha inicial</label>
+                                <input class="form-control" type="date" id="startDate" min="2026-11-01" max="2026-12-31" required>
+                            </div>
+
+                            <!-- Tipo de bicicleta -->
+                            <div class="mb-3">
+                                <label for="opciones" class="form-label">Tipo de bicicleta</label>
+                                <select class="form-select" name="opciones" id="opciones">
+                                    <option value="mountain">Mountain</option>
+                                    <option value="route">Route</option>
+                                    <option value="street">Street</option>
+                                </select>
+                            </div>
+
+                            <!-- Plan (Radios) -->
+                            <div class="mb-3">
+                                <label class="form-label d-block">Plan</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="plan" id="planPro">
+                                    <label class="form-check-label" for="planPro">Pro</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="plan" id="planPremium">
+                                    <label class="form-check-label" for="planPremium">Premium</label>
+                                </div>
+                            </div>
+
+                            <!-- Número de bicicletas -->
+                            <div class="mb-3">
+                                <label for="numberBicicles" class="form-label">Número de bicicletas</label>
+                                <input class="form-control" type="number" id="numberBicicles" min="1" max="6" value="1">
+                            </div>
+
+                            <!-- Comentarios -->
+                            <div class="mb-3">
+                                <label for="comments" class="form-label">Comentarios</label>
+                                <textarea class="form-control" name="comments" id="comments" rows="3" maxlength="300"></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Tus Datos y Políticas -->
+                <div class="col-12 col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm h-100 d-flex flex-column justify-content-between">
+                        <fieldset>
+                            <legend class="fw-bold fs-5 text-primary mb-3">Tus datos</legend>
+                            
+                            <!-- Nombre y Documento en paralelo -->
+                            <div class="row">
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label for="name" class="form-label">Nombre</label>
+                                    <input class="form-control" type="text" id="name" required minlength="3" pattern="^[a-zA-Z\s]{3,}$" title="Use al menos 3 letras">
+                                </div>
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label for="identification" class="form-label">Documento</label>
+                                    <input class="form-control" type="text" id="identification" required pattern="^[0-9]{6,10}$" title="Solo números entre 6 y 10 dígitos">
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input class="form-control" type="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Por favor usa un correo válido">
+                            </div>
+
+                            <!-- Celular -->
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Celular</label>
+                                <input class="form-control" type="tel" id="phone" placeholder="3..." pattern="^3\d{9}$" title="Debe empezar por 3 y tener 10 dígitos">
+                            </div>
+
+                            <!-- Horario (Radios) -->
+                            <div class="mb-3">
+                                <label class="form-label d-block">Jornada de recogida</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="schedule" id="scheduleMorning">
+                                    <label class="form-check-label" for="scheduleMorning">Mañana</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="schedule" id="scheduleAfternoon">
+                                    <label class="form-check-label" for="scheduleAfternoon">Tarde</label>
+                                </div>
+                            </div>
+
+                            <!-- Políticas de alquiler -->
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="politics" required>
+                                <label class="form-check-label small text-muted" for="politics">
+                                    Confirmo que he leído y acepto las políticas de alquiler.
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Botón de Enviar -->
+                        <div>
+                            <button class="btn btn-primary w-100 py-2 shadow-sm" type="submit">Enviar reserva</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</section>
+
+    <footer class="container my-4">
+        <div class="row g-2 border-top">
+            <div class="col-12 col-md-8">
+                <h1 class="fw-bold fs-2">Rueda libre</h1>
+            </div>
+            <div class="col-12 col-md-4 text-md-end">
+                <a href="mailto:ruedalibre@gmail.com">ruedalibre@gmail.com</a>
+                <p>2026</p>
+            </div>
+        </div>
     </footer>
 </body>
 

@@ -151,10 +151,10 @@ article img{
 } */
 
 /*tabls de la pagina tarifas.html*/
-/* .container-tablas{
+ .container-tablas{
     width: 100%;
     overflow: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;    
 }
 
 .tablas{        
@@ -173,21 +173,16 @@ article img{
     border-bottom: 1px solid var(--azul-noche);    
 }
 
-
-
-
 .tablas th{
     color: var(--crema);
     background-color: var(--azul-noche);
     font-weight: 600;
 }
 
-
-
-.container{
+/* .container{
     display: grid;
     grid-template-columns: 1fr;
-} */
+}  */
 
 /*formulario de la pagina reservas.html*/
 /* form input{
@@ -270,3 +265,6 @@ form fieldset{
     }    
 } */
 
+dt:hover{
+    color: var(--naranja);
+}
