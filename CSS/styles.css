@@ -13,7 +13,7 @@
     --naranja: #F39A2B;
     --font-montserrat: 'Montserrat', sans-serif;
     --font-open-sans: 'Open Sans', sans-serif;
-    --space: 3 * rem;
+    --space: 3rem;
 }
 
 a{
@@ -34,6 +34,9 @@ h1{
     color: var(--azul-noche);
 } 
 
+.bg-body-tertiary{
+    background-color: var(--gris-asfalto) !important;    
+}
 /* Menu y contenido de menu*/
 
 /* #menu {
