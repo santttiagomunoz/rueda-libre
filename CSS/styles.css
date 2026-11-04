@@ -14,7 +14,13 @@
     --font-montserrat: 'Montserrat', sans-serif;
     --font-open-sans: 'Open Sans', sans-serif;
     --space: 3rem;
+
+
+    --bs-primary:#1E7A4F;
+    --bs-primary-rgb: 30, 122, 79;
 }
+
+
 
 a{
     text-decoration: none;
@@ -32,7 +38,7 @@ body{
 
 h1{
     color: var(--azul-noche);
-} 
+}
 
 .bg-body-tertiary{
     background-color: var(--gris-asfalto) !important;    
@@ -271,3 +277,84 @@ form fieldset{
 dt:hover{
     color: var(--naranja);
 }
+
+.btn-outline-primary {
+    --bs-btn-color: var(--verte-ruta);
+    --bs-btn-border-color: var(--verte-ruta);
+    --bs-btn-hover-bg: var(--verte-ruta);            
+}
+
+.btn-primary{
+    --bs-btn-bg: var(--verte-ruta);
+    --bs-btn-border-color: var(--verte-ruta);
+    --bs-btn-color: #ffffff;
+    
+    /* Estado Hover: Un tono verde más profundo para dar feedback visual */
+    --bs-btn-hover-bg: #155837;
+    --bs-btn-hover-border-color: #124d30;
+    --bs-btn-hover-color: #ffffff;
+    
+    /* Estado Active (Al hacer clic): Un verde aún más oscuro */
+    --bs-btn-active-bg: #0e3d24;
+    --bs-btn-active-border-color: #0b311d;
+    --bs-btn-active-color: #ffffff;
+    
+    /* Sombra de enfoque (focus ring) adaptada al color de marca */
+    --bs-btn-focus-shadow-rgb: 30, 122, 79;
+}
+
+.btn-naranja {
+    --bs-btn-color: var(--azul-noche); /* Texto oscuro para asegurar contraste óptimo */
+    --bs-btn-bg: var(--naranja);
+    --bs-btn-border-color: var(--naranja);
+    
+    /* Estado Hover */
+    --bs-btn-hover-color: var(--azul-noche);
+    --bs-btn-hover-bg: #d88321;
+    --bs-btn-hover-border-color: #cb7a1d;
+    
+    /* Estado Active */
+    --bs-btn-active-color: var(--azul-noche);
+    --bs-btn-active-bg: #bd711c;
+    --bs-btn-active-border-color: #b06919;
+    
+    /* Sombra de enfoque adaptada al naranja */
+    --bs-btn-focus-shadow-rgb: 243, 154, 43;
+}
+
+.text-secondary{
+    --bs-text-secondary: var(--crema);
+}
+
+.hero-rueda {
+    background: linear-gradient(135deg, rgba(20, 33, 61, 0.95), rgba(30, 122, 79, 0.85)), url('../img/imagen.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--crema);
+    font-family: var(--font-montserrat);
+    border-radius: var(--bs-border-radius-lg);
+    padding: 5rem 2rem;
+    box-shadow: 0 10px 25px rgba(20, 33, 61, 0.15);
+}
+
+
+.titulo-seccion {
+    font-family: var(--font-montserrat);
+    color: var(--azul-noche);
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+/* Línea decorativa inferior con el color Naranja Pedal */
+.titulo-seccion::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 4px;
+    background-color: var(--naranja);
+    margin-top: 0.5rem;
+    border-radius: 2px;
+}
+
