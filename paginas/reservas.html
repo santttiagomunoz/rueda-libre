@@ -75,11 +75,12 @@
         </section>
     </main>
 
-   <section class="container my-5">
+<section class="container my-5">
     <div class="card shadow-sm border-0 p-4 bg-light">
         <h2 class="fw-bold mb-4 text-center">Formulario de Reserva</h2>
         
-        <form action="POST" class="needs-validation">
+        <!-- Agregado el atributo 'novalidate' y la clase 'needs-validation' -->
+        <form action="POST" class="needs-validation" novalidate>
             <div class="row g-4">
                 
                 <!-- Columna Izquierda: Tu Alquiler -->
@@ -92,35 +93,40 @@
                             <div class="mb-3">
                                 <label for="startDate" class="form-label">Fecha inicial</label>
                                 <input class="form-control" type="date" id="startDate" min="2026-11-01" max="2026-12-31" required>
+                                <div class="invalid-feedback">Selecciona una fecha válida para tu alquiler.</div>
                             </div>
 
                             <!-- Tipo de bicicleta -->
                             <div class="mb-3">
                                 <label for="opciones" class="form-label">Tipo de bicicleta</label>
-                                <select class="form-select" name="opciones" id="opciones">
+                                <select class="form-select" name="opciones" id="opciones" required>
+                                    <option selected disabled value="">Elige una opción...</option>
                                     <option value="mountain">Mountain</option>
                                     <option value="route">Route</option>
                                     <option value="street">Street</option>
                                 </select>
+                                <div class="invalid-feedback">Por favor selecciona un tipo de bicicleta.</div>
                             </div>
 
                             <!-- Plan (Radios) -->
                             <div class="mb-3">
                                 <label class="form-label d-block">Plan</label>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="plan" id="planPro">
+                                    <input class="form-check-input" type="radio" name="plan" id="planPro" required>
                                     <label class="form-check-label" for="planPro">Pro</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="plan" id="planPremium">
+                                    <input class="form-check-input" type="radio" name="plan" id="planPremium" required>
                                     <label class="form-check-label" for="planPremium">Premium</label>
                                 </div>
+                                <!-- Nota: Para radios agrupados con 'required', con ponérselo a uno o asegurar el grupo Bootstrap gestiona la validación -->
                             </div>
 
                             <!-- Número de bicicletas -->
                             <div class="mb-3">
                                 <label for="numberBicicles" class="form-label">Número de bicicletas</label>
-                                <input class="form-control" type="number" id="numberBicicles" min="1" max="6" value="1">
+                                <input class="form-control" type="number" id="numberBicicles" min="1" max="6" value="1" required>
+                                <div class="invalid-feedback">Indica un número válido entre 1 y 6.</div>
                             </div>
 
                             <!-- Comentarios -->
@@ -142,11 +148,13 @@
                             <div class="row">
                                 <div class="col-12 col-sm-6 mb-3">
                                     <label for="name" class="form-label">Nombre</label>
-                                    <input class="form-control" type="text" id="name" required minlength="3" pattern="^[a-zA-Z\s]{3,}$" title="Use al menos 3 letras">
+                                    <input class="form-control" type="text" id="name" required minlength="3" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{3,}$" title="Use al menos 3 letras">
+                                    <div class="invalid-feedback">Escribe tu nombre, mínimo 3 letras.</div>
                                 </div>
                                 <div class="col-12 col-sm-6 mb-3">
                                     <label for="identification" class="form-label">Documento</label>
                                     <input class="form-control" type="text" id="identification" required pattern="^[0-9]{6,10}$" title="Solo números entre 6 y 10 dígitos">
+                                    <div class="invalid-feedback">Ingresa un documento válido (6 a 10 dígitos).</div>
                                 </div>
                             </div>
 
@@ -154,23 +162,25 @@
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input class="form-control" type="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Por favor usa un correo válido">
+                                <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
                             </div>
 
                             <!-- Celular -->
                             <div class="mb-3">
                                 <label for="phone" class="form-label">Celular</label>
-                                <input class="form-control" type="tel" id="phone" placeholder="3..." pattern="^3\d{9}$" title="Debe empezar por 3 y tener 10 dígitos">
+                                <input class="form-control" type="tel" id="phone" placeholder="3..." pattern="^3\d{9}$" title="Debe empezar por 3 y tener 10 dígitos" required>
+                                <div class="invalid-feedback">Debe empezar por 3 y tener 10 dígitos.</div>
                             </div>
 
                             <!-- Horario (Radios) -->
                             <div class="mb-3">
                                 <label class="form-label d-block">Jornada de recogida</label>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="schedule" id="scheduleMorning">
+                                    <input class="form-check-input" type="radio" name="schedule" id="scheduleMorning" required>
                                     <label class="form-check-label" for="scheduleMorning">Mañana</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="schedule" id="scheduleAfternoon">
+                                    <input class="form-check-input" type="radio" name="schedule" id="scheduleAfternoon" required>
                                     <label class="form-check-label" for="scheduleAfternoon">Tarde</label>
                                 </div>
                             </div>
@@ -181,6 +191,7 @@
                                 <label class="form-check-label small text-muted" for="politics">
                                     Confirmo que he leído y acepto las políticas de alquiler.
                                 </label>
+                                <div class="invalid-feedback">Debes aceptar las políticas para continuar.</div>
                             </div>
                         </fieldset>
 
@@ -196,6 +207,8 @@
     </div>
 </section>
 
+
+
     <footer class="container my-4">
         <div class="row g-2 border-top">
             <div class="col-12 col-md-8">
@@ -207,6 +220,23 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script obligatorio de Bootstrap para activar las validaciones -->
+<script>
+    (() => {
+        'use strict'
+        const forms = document.querySelectorAll('.needs-validation')
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">        
+    </script>
 </body>
 </html>
