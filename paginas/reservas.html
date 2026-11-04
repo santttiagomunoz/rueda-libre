@@ -78,7 +78,12 @@
 <section class="container my-5">
     <div class="card shadow-sm border-0 p-4 bg-light">
         <h2 class="fw-bold mb-4 text-center">Formulario de Reserva</h2>
-        
+                
+        <div class="alert alert-warning alert-dismissible fade show">
+            No olvides ingresar tu documento
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+
         <!-- Agregado el atributo 'novalidate' y la clase 'needs-validation' -->
         <form action="POST" class="needs-validation" novalidate>
             <div class="row g-4">
@@ -186,7 +191,37 @@
                             </div>
 
                             <!-- Políticas de alquiler -->
+                            <div class="mb-4">                                
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#politicas">
+                                    Abrir Políticas
+                                </button>
+                            </div>
+
+                            <div class="modal fade" id="politicas" tabindex="-1" aria-labelledby="politicasLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fs-5" id="politicasLabel">Politicas</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>Presenta tu documento de identidad original al recoger la bicicleta.</li>
+                                                <li>Revisa la bicicleta con el asesor antes de salir.</li>
+                                                <li>Cada 15 minutos de retraso en la devolución tienen un recargo de $5.000.</li>
+                                                <li>Los daños por mal uso se cobran según el costo de la reparación.</li>
+                                                <li>Los menores de edad deben estar acompañados por un adulto responsable.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="form-check mb-4">
+                                
                                 <input class="form-check-input" type="checkbox" id="politics" required>
                                 <label class="form-check-label small text-muted" for="politics">
                                     Confirmo que he leído y acepto las políticas de alquiler.
